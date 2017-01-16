@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<Title>Invoice System</title>
+	<link rel="stylesheet" type="text/css" href="styling.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="invoice.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>BHATBHATENI STORE</h1>
+		<h3>Customer and Product Information</h3>
+		<form id="form1">
+			<div>
+				<p class='name'><label for="firstname">First Name :</label><input type="text" name="firstname" /></p>
+				<p class='name'><label for="lastname">Last Name :</label><input type="text" name="lastname" /></p>
+				<p class='name'><label id='options' for="branch">Store Branch :</label>
+					<input type="radio" name="branch" value="Baluwatar" /><span>Baluwatar</span>
+					<input type="radio" name="branch" value="Pulchowk" /><span>Pulchowk</span>
+					<input type="radio" name="branch" value="Satdobato" /><span>Satdobato</span>
+					<input type="radio" name="branch" value="Sallaghari" /><span>Sallaghari</span>
+				</p>
+			</div>
+			<table id="product_details" >
+				<tr class="tr_list">
+					<th class="row_style">S.N.</th>
+					<th class="row_style">Product ID</th>
+					<th class="row_style">Name</th>
+					<th class="row_style">Price</th>
+					<th class="row_style">Quantity</th>
+					<th class="row_style">Discount%</th>
+				</tr>
+			</table>
+			<input class="form-button" type="button" id="ok" value="Save">
+			<input class="form-button" type="button" id ='reset' value="Bill">
+		</form>
+	</div>	
+	
+	
+</body>
+</html>
